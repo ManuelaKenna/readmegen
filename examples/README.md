@@ -1,5 +1,5 @@
 # Whales!
-[![MIT](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT)
+[![Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-green)](https://opensource.org/licenses/Apache-2.0)
 ## Table Of Contents
 - [Description](#description)
 - [Usage](#usage)
@@ -9,7 +9,7 @@
 ## Description
 A project about whales
 ## Usage
-to teach people about whales
+To inform the public about Whales!
 ## Installation
 Clone this repo and run NPM install
 ## Test

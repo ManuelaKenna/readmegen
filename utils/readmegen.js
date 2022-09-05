@@ -2,7 +2,11 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
     if(license==="MIT"){
-        return "![MIT](https://opensource.org/licenses/MIT)"
+        return "[![MIT](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT)"
+    }else if(license==="GPL"){
+        return "![GPL](https://img.shields.io/badge/license-GPL-lightgreen)"
+    }else if(license==="Apache 2.0"){
+        return "![Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-green)"
     }
 }
 
@@ -15,9 +19,24 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 module.exports = function (data){
-    return `
-    ${data.name}
-    ${renderLicenseBadge(data.license)}
-    
-    `
+    return `# ${data.name}
+${renderLicenseBadge(data.license)}
+## Table Of Contents
+- [Description](#description)
+- [Usage](#usage)
+- [installation](#installation)
+- [test](#test)
+
+## Description
+${data.description}
+## Usage
+${data.usage}
+## Installation
+${data.installation}
+## Test
+${data.test}
+
+[Visit my GitHub profile!](https://github.com/${data.gitusername})
+
+ `
 }
